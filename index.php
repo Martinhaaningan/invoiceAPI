@@ -21,8 +21,7 @@
 
 		public function createInvoice($recipient) {
 			$this->recipient = $recipient;
-			$date = date("Y-m-d");
-			$this->date = $date;
+			$this->date = date("Y-m-d");
 
 			$this->delivery = new delivery;
 			$this->delivery->address = $recipient->address;
